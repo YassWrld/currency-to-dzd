@@ -58,8 +58,8 @@ fn print_converted(mut amount: u32) {
     amount = amount % 10_000_000;
     let m = amount / 10_000; // mlyoun
     amount = amount % 10_000;
-    let k = (amount / 1_000) * 100; // 100alf
-    let d = amount % 1_000;
+    let k = amount / 10; // alf
+    let d = amount % 10;
     // println!("{} mlyar {} mlyoun {} alf {} dzd", b, m, k, d);
     if b != 0 {
         print!("{} mlyar", b);
